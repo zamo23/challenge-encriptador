@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <img class="logoAlura" src="./img/Logo.png" alt="Logo de Alura">
+        </div>
+    </header>
+    <main>
+        <section class="contenido">
+            <div class="seccionIzquierda">
+                <textarea id="textoEntrada" class="ingreso-texto" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="seccionIzquierdaInferior">
+                    <img src="./img/exclamacion.svg" alt="¡Advertencia!" class="svg-exclamacion">
+                    <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+                    <div class="contenedorBotonesIzquierda">
+                        <button id="botonEncriptar" class="botonEncriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="botonDesencriptar">Desencriptar</button>
+                    </div>
+                </div>   
+            </div>
+            <div id="ajusteContenido" class="seccionDerecha">
+                <img id="imgDer" class="muneco" src="./img/Muñeco.png" alt="Imagen del muñeco">
+                <p id="mensajeAdvertencia" class="mensaje">Ningún mensaje fue encontrado</p>
+                <textarea id="textoInformativo" class="texto-info" readonly>Ingresa el texto que desees encriptar o desencriptar</textarea>
+                <button id="botonCopiar" class="botonCopiar oculto">Copiar</button>
+            </div>
+        </section>
+    </main>    
+    <script src="./js/app.js"></script>
+</body>
+</html>
